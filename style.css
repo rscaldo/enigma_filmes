@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body img {
+  display: block;
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background-color: #000;
+  color: #fff;
+  font-family: "poppins", sans-serif;
+  padding: 40px 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 60px;
+}
+
+.header h1 {
+  font-size: 2rem;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.menu a {
+  display: inline-block;
+  color: #fff;
+  padding: 16px 0px;
+  position: relative;
+  font-size: 1.2rem;
+}
+
+.menu a::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: #fff;
+  width: 0%;
+  position: absolute;
+  margin-top: 4px;
+  transition: 0.3s;
+}
+
+.menu a:hover:after {
+  width: 100%;
+}
+
+#sobre {
+  background-color: #000;
+  padding: 20px 20px 0px 20px;
+  color: #fff;
+}
+
+.conteudo-sobre {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.conteudo-sobre h2,
+.conteudo-contato h2 {
+  font-family: "poppins";
+  font-size: 2.5rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.conteudo-sobre span,
+.conteudo-contato span {
+  color: #ffbb00;
+}
+
+.conteudo-sobre p {
+  font-family: "roboto";
+  color: #ccc;
+  font-size: 1rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+#contato {
+  padding: 20px 20px 20px 20px;
+}
+
+.conteudo-contato img {
+  height: 32px;
+  width: 32px;
+}
+
+.metodos-contato {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+form input,
+form textarea,
+form button {
+  display: block;
+  width: 320px;
+  margin-bottom: 8px;
+  padding: 8px;
+  font-family: "roboto";
+}
+
+input:focus,
+textarea:focus {
+  outline-color: #ffbb00;
+}
+
+form textarea {
+  resize: none;
+  height: 180px;
+}
+
+form button {
+  border-radius: 4px;
+  background-color: #ffbb00;
+  color: #000;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+form button:hover {
+  background-color: #e4a30b;
+}
+
+.metodos-contato h3 {
+  font-family: "poppins";
+  margin-bottom: 20px;
+}
+
+.metodos-contato ul {
+  display: flex;
+  gap: 20px;
+}
+
+.metodos-contato p {
+  font-family: "roboto";
+}
+
+footer {
+  background-color: #000;
+  color: #ccc;
+  padding: 20px;
+}
